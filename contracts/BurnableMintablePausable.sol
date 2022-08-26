@@ -6,7 +6,7 @@ import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 import '@openzeppelin/contracts/token/ERC20/ERC20Pausable.sol';
 import '@openzeppelin/contracts/token/ERC20/ERC20Burnable.sol';
 
-contract BurnableMintablePausable is Ownable, ERC20Pausable {
+contract BurnableMintablePauseableERC20 is Ownable, ERC20Pausable {
     using SafeMath for uint256;
 
     constructor(

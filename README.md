@@ -1,11 +1,22 @@
-
 # Token Factory Contracts
 
-  
+## Contracts
+
+### Burnable ERC20
+
+### Pauseable ERC20
+
+### Capped ERC20
+
+### Pauseable Mintable ERC20
+
+### Pauseable Burnable ERC20
+
+### Burnable Mintable Pauseable ERC20
+
+### TetherToken
 
 ## Installation
-
-  
 
 ```sh
 
@@ -19,11 +30,7 @@ $ npm install
 
 ```
 
-  
-
 ## Compile
-
-  
 
 ```sh
 

@@ -3,7 +3,7 @@ pragma solidity =0.6.5;
 import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 import '@openzeppelin/contracts/token/ERC20/ERC20Burnable.sol';
 
-contract Burnable is ERC20Burnable {
+contract BurnableERC20 is ERC20Burnable {
     uint256 private _cap;
 
     constructor(

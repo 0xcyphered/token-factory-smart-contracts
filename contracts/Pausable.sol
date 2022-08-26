@@ -3,7 +3,7 @@ pragma solidity =0.6.5;
 import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 import '@openzeppelin/contracts/token/ERC20/ERC20Pausable.sol';
 
-contract PausableERC20 is ERC20Pausable {
+contract PauseableERC20 is ERC20Pausable {
     uint256 private _cap;
 
     constructor(

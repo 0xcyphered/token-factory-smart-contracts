@@ -5,7 +5,7 @@ import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 import '@openzeppelin/contracts/token/ERC20/ERC20Pausable.sol';
 import '@openzeppelin/contracts/token/ERC20/ERC20Burnable.sol';
 
-contract PausableBurnable is ERC20Pausable {
+contract PauseableBurnableERC20 is ERC20Pausable {
     using SafeMath for uint256;
     uint256 private _cap;
 

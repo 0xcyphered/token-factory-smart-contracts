@@ -4,7 +4,7 @@ import '@openzeppelin/contracts/access/Ownable.sol';
 import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 import '@openzeppelin/contracts/token/ERC20/ERC20Pausable.sol';
 
-contract PausableMintable is Ownable, ERC20Pausable {
+contract PauseableMintableERC20 is Ownable, ERC20Pausable {
     constructor(
         uint256 _initialSupply,
         string memory _name,
