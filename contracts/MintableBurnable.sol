@@ -1,10 +1,9 @@
 pragma solidity =0.6.5;
 
 import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
-import '@openzeppelin/contracts/token/ERC20/ERC20Burnable.sol';
 import '@openzeppelin/contracts/access/Ownable.sol';
 
-contract Capped is ERC20Burnable, Ownable {
+contract Capped is ERC20, Ownable {
     constructor(
         uint256 _initialSupply,
         string memory _name,
@@ -12,16 +11,9 @@ contract Capped is ERC20Burnable, Ownable {
         uint8 _decimals
     ) public ERC20(_name, _symbol) {
         _setupDecimals(_decimals);
-        if (_initialSupply > 0) {
-            _mint(msg.sender, _initialSupply);
-        }
+        _mint(msg.sender, _initialSupply);
     }
 
-    /**
-     * @dev Mints `amount` tokens to the input parameter.
-     *
-     * See {ERC20-_mint}.
-     */
     function mint(address to, uint256 value) public onlyOwner returns (bool) {
         _mint(to, value);
         return true;
