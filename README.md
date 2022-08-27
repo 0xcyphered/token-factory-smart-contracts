@@ -6,6 +6,8 @@
 
 ### Pauseable ERC20
 
+### Mintable ERC20
+
 ### Capped ERC20
 
 ### Pauseable Mintable ERC20
@@ -13,6 +15,8 @@
 ### Pauseable Burnable ERC20
 
 ### Burnable Mintable Pauseable ERC20
+
+### Mintable Burnable ERC20
 
 ### TetherToken
 
